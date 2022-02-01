@@ -1,5 +1,4 @@
-import axios from "axios";
+export const POKEMON_API_URL = "https://pokeapi.co/api/v2/pokemon";
 
-export const apiPokemon = axios.create({
-  baseURL: "https://pokeapi.co/api/v2",
-});
+export const IMAGE_API_URL =
+  "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";

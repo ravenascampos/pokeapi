@@ -53,9 +53,15 @@ export const Card = styled.li`
     transform: scaleX(1);
   }
 
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
   img {
-    width: 8.5rem;
-    height: 8.5rem;
+    width: 150px;
   }
 `;
 
@@ -71,7 +77,7 @@ export const Button = styled.button`
   font-size: 1rem;
   margin-top: 1.5rem;
   font-weight: 700;
-  transition: filter 0.2s;
+  transition: filter 0.3s;
 
   &:hover {
     filter: brightness(0.7);

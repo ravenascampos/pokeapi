@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-    background: linear-gradient(45deg, #be93c5, #7bc6cc);
+    background: linear-gradient(to top right, #be93c5, #7bc6cc);
     background-repeat: no-repeat;
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
