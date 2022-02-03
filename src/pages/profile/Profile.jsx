@@ -12,10 +12,10 @@ function Profile() {
 
   const formik = useFormik({
     initialValues: {
-      nome: "",
-      sexo: "feminino",
-      origem: "brasil",
-      funcao: "",
+      nome: "Ash",
+      sexo: "masculino",
+      origem: "Japão",
+      funcao: "Mestre Pokemon",
       
     },
     validationSchema: schema,
@@ -24,10 +24,10 @@ function Profile() {
     },
     onReset: (values) => {
       console.log("RESET", values);
-      values.nome = "";
-      values.sexo = "feminino";
-      values.origem = "brasil";
-      values.funcao = "";
+      values.nome = "Ash";
+      values.sexo = "masculino";
+      values.origem = "Japão";
+      values.funcao = "Mestre Pokemon";
     },
   });
   
@@ -57,9 +57,9 @@ function Profile() {
                        
 
             <S.StyleLabel>Sexo</S.StyleLabel>
-            <S.Select name="sexo">
+            <S.Select>
                 <option value="feminino">Feminino</option>                            
-                <option value="masculino">Masculino</option>                                                        
+                <option value="masculino" selected>Masculino</option>                                                        
                 <option value="outros">Outros</option>
             </S.Select>
 
@@ -91,7 +91,7 @@ function Profile() {
               <option value="Benin">Benin</option>
               <option value="Bermudas">Bermudas</option>
               <option value="Botsuana">Botsuana</option>
-              <option value="Brasil" selected>Brasil</option>
+              <option value="Brasil">Brasil</option>
               <option value="Brunei">Brunei</option>
               <option value="Bulgária">Bulgária</option>
               <option value="Burkina Fasso">Burkina Fasso</option>
@@ -165,7 +165,7 @@ function Profile() {
               <option value="Israel">Israel</option>
               <option value="Itália">Itália</option>
               <option value="Jamaica">Jamaica</option>
-              <option value="Japão">Japão</option>
+              <option value="Japão" selected>Japão</option>
               <option value="Jordânia">Jordânia</option>
               <option value="Kuwait">Kuwait</option>
               <option value="Latvia">Latvia</option>

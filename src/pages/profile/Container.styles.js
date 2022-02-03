@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  height: 100vh;
+  height: 90vh;
   background: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: -15px;
+  margin: 0px;
   padding:0;
+  overflow: hidden;
 `;
 
 export const Div = styled.div`
@@ -35,7 +36,8 @@ export const Select = styled.select`
   height: 30px;
   background: #F0F0F0;
   border-radius: 20px;
-  border: none;
+  border: none;  
+  padding-left: 15px;
 `;
 
 export const Input = styled.input`
@@ -45,6 +47,7 @@ export const Input = styled.input`
   background: #F0F0F0;
   border-radius: 20px;
   border: none;
+  padding: 15px
 `;
 
 
@@ -60,6 +63,7 @@ export const FormBox = styled.div`
 export const FormFields = styled.form`
   display: flex;
   flex-direction: column;
+  height: 270px;
 `;
 
 export const ErrorTip = styled.p`
