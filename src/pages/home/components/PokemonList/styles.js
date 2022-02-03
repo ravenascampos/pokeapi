@@ -61,7 +61,9 @@ export const Card = styled.li`
   }
 
   img {
-    width: 150px;
+    width: 8.562rem;
+    height: 8.562rem;
+    margin-bottom: 1rem;
   }
 `;
 

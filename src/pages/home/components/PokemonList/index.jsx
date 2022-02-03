@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { POKEMON_API_URL, IMAGE_API_URL } from "../../../../services/api";
 
-export function PokemonItem() {
+export function PokemonList({ onOpenModal }) {
   const [pokemonData, setPokemonData] = useState([]);
 
   useEffect(() => {
-    axios.get(POKEMON_API_URL + "?limit=898").then((response) => {
+    axios.get(POKEMON_API_URL + "pokemon/?limit=898").then((response) => {
       if (response.status >= 200 && response.status < 300) {
         const { results } = response.data;
         let newPokemonData = [];
@@ -29,7 +29,7 @@ export function PokemonItem() {
     <Container>
       {pokemonData.map((pokemon) => {
         return (
-          <Card>
+          <Card onClick={onOpenModal}>
             <img src={pokemon.url} alt={pokemon.name} />
             <h1>{pokemon.name}</h1>
             <h3>R$ 18.000,00</h3>
