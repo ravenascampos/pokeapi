@@ -20,38 +20,7 @@ export const Card = styled.li`
   background-color: #ffffff;
   border-radius: 0.5rem;
   box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: transform 0.3s ease-in-out;
-    border-radius: 0.5rem;
-  }
-
-  &::before {
-    border-left: 2px solid #f2bd1d;
-    border-right: 2px solid #f2bd1d;
-    transform: scaleY(0);
-  }
-  &::after {
-    border-top: 2px solid #f2bd1d;
-    border-bottom: 2px solid #f2bd1d;
-    transform: scaleX(0);
-  }
-
-  &:hover::before {
-    transform: scaleY(1);
-  }
-
-  &:hover::after {
-    transform: scaleX(1);
-  }
+  border: 2px solid #f2bd1d;
 
   h1 {
     font-size: 1.5rem;
@@ -74,14 +43,29 @@ export const Button = styled.button`
   height: 2.5rem;
   background: #f2db1d;
   color: #000;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   border: 0;
   font-size: 1rem;
   margin-top: 1.5rem;
   font-weight: 700;
-  transition: filter 0.3s;
+  position: relative;
 
-  &:hover {
-    filter: brightness(0.7);
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 0.5rem;
+    border: 2px solid #3761a8;
+    transform: scale(0);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    transform: scale(1);
   }
 `;

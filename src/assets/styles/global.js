@@ -43,7 +43,7 @@ justify-content: center;
 }
 .react-modal-content {
 width: 100%;
-max-width: 576px;
+max-width: 36rem;
 height: auto;
 background: #ffffff;
 padding: 3rem;

@@ -11,6 +11,7 @@ export function Home() {
   function handleCloseModal() {
     setOpenModal(false);
   }
+
   return (
     <>
       <PokemonList onOpenModal={handleOpenModal} />

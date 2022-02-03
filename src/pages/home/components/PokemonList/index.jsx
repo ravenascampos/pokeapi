@@ -8,20 +8,18 @@ export function PokemonList({ onOpenModal }) {
 
   useEffect(() => {
     axios.get(POKEMON_API_URL + "pokemon/?limit=898").then((response) => {
-      if (response.status >= 200 && response.status < 300) {
-        const { results } = response.data;
-        let newPokemonData = [];
-        results.forEach((pokemon, index) => {
-          index++;
-          let pokemonObject = {
-            id: index,
-            url: IMAGE_API_URL + index + ".png",
-            name: pokemon.name,
-          };
-          newPokemonData.push(pokemonObject);
-        });
-        setPokemonData(newPokemonData);
-      }
+      const { results } = response.data;
+      let newPokemonData = [];
+      results.forEach((pokemon, index) => {
+        index++;
+        let pokemonObject = {
+          id: index,
+          url: IMAGE_API_URL + index + ".png",
+          name: pokemon.name,
+        };
+        newPokemonData.push(pokemonObject);
+      });
+      setPokemonData(newPokemonData);
     });
   }, []);
 
@@ -29,10 +27,11 @@ export function PokemonList({ onOpenModal }) {
     <Container>
       {pokemonData.map((pokemon) => {
         return (
-          <Card onClick={onOpenModal}>
+          <Card>
             <img src={pokemon.url} alt={pokemon.name} />
             <h1>{pokemon.name}</h1>
             <h3>R$ 18.000,00</h3>
+            <Button onClick={onOpenModal}>info+</Button>
             <Button>Adicionar ao carrinho</Button>
           </Card>
         );
