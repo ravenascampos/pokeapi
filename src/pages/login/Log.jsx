@@ -1,9 +1,10 @@
-/*import React, { useState } from 'react';
-import LoginForm from './pages/login/LoginForm';
+import React, { useState } from 'react';
+import LoginForm from './comp/Loginform';
+import * as S from "./comp/login.style"
 
-function App() {
+function Log() {
   const adminUser = {
-    email: "ashketchum@gmail.com",
+    email: "ash@gmail.com",
     password: "admin123"
   }
 
@@ -30,7 +31,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <S.Back>
       {(user.email !="") ? (
         <div className='welcome'>
           <h2>Bem vindo(a), <span>{user.name}</span></h2>
@@ -39,9 +40,7 @@ function App() {
       ) : (
         <LoginForm Login={Login} error={error} />
       )}
-    </div>
+    </S.Back>
   );
-
 }
-
-export default App; */
+export default Log;
