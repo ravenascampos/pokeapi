@@ -7,6 +7,7 @@ export function ButtonCart(){
         <>
             <div className="containerBtn">
                 <button className="btnContinuar" type="button">Continuar Comprando</button>
+                <Modal/>
             </div>
         </>
     );
