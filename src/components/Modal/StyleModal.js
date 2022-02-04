@@ -46,6 +46,12 @@ export const ConteudoModal = Styled.span`
     text-align: center;
 `
 
+export const ContBotao = Styled.div`
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+`
+
 export const Box = Styled.div`
     display: flex;
     justify-content: center;

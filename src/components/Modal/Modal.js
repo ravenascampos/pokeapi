@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonModal from "../Button/ButtonModal";
 import { styled } from '@mui/system';
 import ModalUnstyled from '@mui/base/ModalUnstyled';
 import LocalGroceryStoreOutlinedIcon from '@mui/icons-material/LocalGroceryStoreOutlined';
@@ -61,6 +62,9 @@ export function Modal(){
                                     <p id="unstyled-modal-description">Em breve você receberá um email com todos os detalhes.</p>
                                 </S.ConteudoModal>
                             </S.ContTexto>
+                            <S.ContBotao>
+                                <ButtonModal/>
+                            </S.ContBotao>
                         </S.Box>
                     </StyledModal>
             </div>

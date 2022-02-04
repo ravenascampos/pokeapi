@@ -50,8 +50,6 @@ export function Cart(){
             </S.Section>
         </S.Container>
     )
-
-
 }
 
 export default Cart;

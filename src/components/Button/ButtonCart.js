@@ -1,14 +1,15 @@
 import React from "react";
-import "./Button.css"
+import Modal from "../Modal/Modal";
+import * as S from './StyleButton'
 
 export function ButtonCart(){
 
     return(
         <>
-            <div className="containerBtn">
-                <button className="btnContinuar" type="button">Continuar Comprando</button>
+            <S.ContainerBtn>
+                <S.BtnCotinuar type="button">Continuar Comprando</S.BtnCotinuar>
                 <Modal/>
-            </div>
+            </S.ContainerBtn>
         </>
     );
 }
