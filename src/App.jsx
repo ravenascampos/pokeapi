@@ -5,6 +5,7 @@ import { Home } from "./pages/home/Home/index";
 import Profile from "./pages/profile/Profile"
 import NavBar from "./components/Navbar"
 
+
 Modal.setAppElement("#root");
 
 export function App() {
@@ -15,7 +16,7 @@ export function App() {
         
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/login" element={<Login />} />
+        
         
       </Routes>
       <GlobalStyle />
