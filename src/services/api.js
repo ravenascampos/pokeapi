@@ -1,10 +1,19 @@
-import axios from "axios";
+export async function getAllPokemons(url) {
+  return new Promise((resolve, reject) => {
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        resolve(data);
+      });
+  });
+}
 
-export const POKEMON_API_URL = "https://pokeapi.co/api/v2/";
-
-export const IMAGE_API_URL =
-  "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/";
-
-export const api = axios.create({
-  baseURL: "https://pokeapi.co/api/v2/",
-});
+export async function getPokemon(url) {
+  return new Promise((resolve, reject) => {
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        resolve(data);
+      });
+  });
+}

@@ -1,5 +1,57 @@
 import styled from "styled-components";
 
+export const DivLoading = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12.5rem;
+
+  img {
+    max-width: 12rem;
+    max-height: 12rem;
+  }
+`;
+
+export const Header = styled.header`
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+
+  @media (max-width: 512px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+`;
+
+export const Footer = styled.footer`
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+
+  @media (max-width: 512px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+`;
+
 export const Container = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
@@ -30,15 +82,15 @@ export const Card = styled.li`
   }
 
   img {
-    width: 8.562rem;
-    height: 8.562rem;
+    width: 10rem;
+    height: 10rem;
     margin-bottom: 1rem;
   }
 `;
 
 export const Button = styled.button`
   cursor: pointer;
-  width: 90%;
+  width: auto;
   padding: 0 1.5rem;
   height: 2.5rem;
   background: #f2db1d;
