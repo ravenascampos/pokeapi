@@ -1,7 +1,7 @@
-export async function getAllPokemons(url) {
+export async function getAllPokemon(url) {
   return new Promise((resolve, reject) => {
     fetch(url)
-      .then((response) => response.json())
+      .then((res) => res.json())
       .then((data) => {
         resolve(data);
       });
@@ -11,7 +11,7 @@ export async function getAllPokemons(url) {
 export async function getPokemon(url) {
   return new Promise((resolve, reject) => {
     fetch(url)
-      .then((response) => response.json())
+      .then((res) => res.json())
       .then((data) => {
         resolve(data);
       });

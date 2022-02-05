@@ -1,7 +1,7 @@
 import Modal from "react-modal";
 import { Card } from "./style";
 
-export function DetailsModal({ isOpen, onRequestClose }) {
+export function DetailsModal({ isOpen, onRequestClose, pokemon }) {
   return (
     <Modal
       isOpen={isOpen}
@@ -10,7 +10,7 @@ export function DetailsModal({ isOpen, onRequestClose }) {
       className="react-modal-content"
     >
       <Card>
-        <h1>Pikachu</h1>
+        <h1>{pokemon.name}</h1>
         <img src="" alt="Pikachu" />
         <p></p>
         <p></p>
