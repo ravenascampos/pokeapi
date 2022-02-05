@@ -13,8 +13,6 @@ export const Nav = styled.nav`
   position: static;
   width: 100%;
 
-  /* Third Nav */
-  /* justify-content: flex-start; */
 `;
 
 export const NavImg = styled.img`
@@ -53,10 +51,7 @@ export const NavBtn = styled.nav`
   align-items: center;
   margin-right: 24px;
 
-  /* Third Nav */
-  /* justify-content: flex-end;
-  width: 100vw; */
-
+  
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -73,7 +68,7 @@ export const NavBtnLink = styled(Link)`
   transition: all 0.2s ease-in-out;
   text-decoration: none;
 
-  /* Second Nav */
+  
   margin-left: 24px;
 
   &:hover {
