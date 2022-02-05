@@ -14,7 +14,7 @@ const submitHandler = e => {
     return (
         <S.Form onSubmit={submitHandler}>
             <S.DivContainer>
-                <S.Title>Pokémon Marketplace</S.Title>
+                <S.Im src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png"/>
                 {(error != "") ? ( <div className="error">{error}</div> ) : ""}
                 <S.FormGroup>
                     <S.Label htmlFor="name">Nome:</S.Label>
