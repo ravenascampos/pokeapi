@@ -16,10 +16,10 @@ function Log() {
 
     if (details.email == adminUser.email && details.password == adminUser.password) {
       console.log("Logged in");
-     /* setUser({
+      setUser({
         name: details.name, 
         email: details.email
-      }); */
+      });
     } else {
       console.log("Informações faltantes");
       setError("Informações faltantes");
