@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getAllPokemon, getPokemon } from "../../../services/api";
+import { api, getAllPokemon, getPokemon } from "../../../services/api";
 import { DivLoading, Container } from "./styles";
 import { PokePagination } from "../components/PokePagination";
 import { DetailsModal } from "../components/DetailsModal";
@@ -60,13 +60,15 @@ export function Home() {
 
   //modalDetailsPokemon
   async function handleOpenModal(pokemon) {
-    const response = await getPokemon("https://pokeapi.co/api/v2/pokemon/1/");
-    const { id } = response;
-    const { abilities } = response;
-    const { height } = response;
-    const { weight } = response;
-    const { types } = response;
-    const imageUrl = response.sprites.front_default;
+    const response = await api.get(`pokemon/${pokemon}`);
+    console.log("inferno");
+    console.log(response);
+    const { id } = response.data;
+    const { abilities } = response.data;
+    const { height } = response.data;
+    const { weight } = response.data;
+    const { types } = response.data;
+    const imageUrl = response.data.sprites.front_default;
 
     const newPokemonDetails = {
       name: pokemon,
@@ -77,7 +79,7 @@ export function Home() {
       types,
       imageUrl,
     };
-    console.log("inferno");
+
     console.log(newPokemonDetails);
     setPokeList(newPokemonDetails);
     setOpenModal(true);
