@@ -24,7 +24,7 @@ export const Card = styled.div`
 
   button {
     cursor: pointer;
-    width: 90%;
+    width: auto;
     padding: 0 1.5rem;
     height: 2.5rem;
     background: #f2db1d;
