@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {BsCart3} from "react-icons/bs"
 import {IoPersonOutline} from "react-icons/io5"
-import {FiLogIn} from "react-icons/fi"
+// import {FiLogIn} from "react-icons/fi"
 import {
   Nav,
   NavLink,
@@ -26,7 +26,7 @@ const Navbar = () => {
             <IoPersonOutline/>
           </NavLink>
           <NavLink to='/login' activeStyle>
-            <FiLogIn/>
+            {/* <FiLogIn/> */}
           </NavLink>
         </Menu>
         
