@@ -20,6 +20,10 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 const Navbar = () => {
   const pokemon = useSelector((state) => state.carrinho.pokemon);
+  var quantity = 0;
+  pokemon.forEach((poke) => {
+    quantity += poke.quantity;
+  });
 
   return (
     <>
@@ -30,7 +34,7 @@ const Navbar = () => {
 
         <Menu>
           <NavLink to="/cart" activeStyle>
-            <StyledBadge badgeContent={pokemon.length}>
+            <StyledBadge badgeContent={quantity}>
               <ShoppingCartIcon />
             </StyledBadge>
           </NavLink>

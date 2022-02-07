@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { getPokemon } from "../../../../Redux/Slice/CarrinhoSlice/carrinhoSlice";
 
 export function DetailsPokemon({ pokemon }) {
-  const value = formatPrice(pokemon.weight * 10);
+  const value = pokemon.weight * 10;
 
   const compra = {
     name: pokemon.name,
@@ -14,6 +14,7 @@ export function DetailsPokemon({ pokemon }) {
       pokemon.sprites.other.dream_world.front_default ||
       pokemon.sprites.front_shiny,
     price: value,
+    quantity: 1,
   };
 
   const dispatch = useDispatch();
@@ -70,9 +71,9 @@ export function DetailsPokemon({ pokemon }) {
         </table>
       </div>
 
-      <h3>{value}</h3>
-      <Link to="/cart" onClick={sendPokemon}>
-        <Button>
+      <h3>{formatPrice(value)}</h3>
+      <Link to="/cart">
+        <Button onClick={sendPokemon}>
           <CgPokemon className="text" />
           Capturar Pokemon
         </Button>
