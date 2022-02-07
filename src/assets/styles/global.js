@@ -44,7 +44,7 @@ justify-content: center;
 .react-modal-content {
 width: 100%;
 max-width: 36rem;
-height: auto;
+height: 90%;
 background: #ffffff;
 padding: 3rem;
 position: relative;
@@ -52,6 +52,10 @@ border-radius: 0.5rem;
 outline: none;
 border: 2px solid #f2bd1d;
 }  
+
+.icon {
+    font-size: 1.5rem;
+}
 
 
 `;
