@@ -4,30 +4,51 @@ export const ContainerBtn = Styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 53vw;
+    width: 49vw;
     height: 10vh;
-`
+    margin-left: 50px;
 
-export const VoltarHome = Styled.button`
-    width: 10vw;
-    height: 4.3vh;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(88, 88, 88);
-    font-size: 1rem;
-    color: #fff;
-    cursor: pointer;
-    box-shadow: 3px 3px 3px rgb(27, 27, 27);
-`
+  a{
+  cursor: pointer;
+  width: auto;
+  padding: 0 1.5rem;
+  height: 2.5rem;
+  background: #f2db1d;
+  color: #000;
+  border-radius: 0.5rem;
+  border: 2px solid #3761a8;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  transition: filter 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+text-decoration: none;
+  &:hover {
+    filter: brightness(0.7);
+  }
+    }
+`;
 
-export const BtnCotinuar = Styled.button`
-    width: 12vw;
-    height: 5vh;
-    margin-left: 30px;
-    border: solid black;
-    border-radius: 5px;
-    background-color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 2px 2px 2px rgb(95, 95, 95);
-`
+export const contBtnModal = Styled.a`
+     cursor: pointer;
+  width: auto;
+  padding: 0 1.5rem;
+  height: 2.5rem;
+  background: #f2db1d;
+  color: #000;
+  border-radius: 0.5rem;
+  border: 2px solid #3761a8;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  transition: filter 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    filter: brightness(0.7);
+  }
+`;

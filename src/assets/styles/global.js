@@ -5,7 +5,8 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Sawarabi Mincho', serif;
+    text-decoration: none
 }
 
 body {
@@ -15,7 +16,9 @@ body {
     min-height: 100vh;
     background-size: 300% 300%;
     animation: colors 10s ease infinite;
-}
+    ::-webkit-scrollbar {
+    display: none;
+} 
 
 @keyframes colors {
     0% {
@@ -53,5 +56,9 @@ outline: none;
 border: 2px solid #f2bd1d;
 }  
 
+.icon {
+    font-size: 1.5rem;
+}
+}
 
 `;

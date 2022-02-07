@@ -1,12 +1,23 @@
 import React from "react";
-import * as S from './StyleButton'
+import * as S from "./StyleButton";
+import { Link } from "react-router-dom";
+import { clearPokemon } from "../../Redux/Slice/CarrinhoSlice/carrinhoSlice";
+import { useDispatch } from "react-redux";
+
 
 export function ButtonModal(){
+
+    const dispatch = useDispatch
+
+    function clear(){
+        dispatch(clearPokemon())
+      }
+
     return(
         <>
-            <div>
-                <S.VoltarHome>Voltar para home</S.VoltarHome>
-            </div>
+            <S.contBtnModal>
+                <Link to="/home" onClick={clear}>Voltar para home</Link>
+            </S.contBtnModal>
         </>
     );
 }
