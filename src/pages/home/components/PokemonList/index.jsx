@@ -11,7 +11,7 @@ export function PokemonList({ onOpenModal, pokemon }) {
 
   const compra = {
     name: pokemon.name,
-    image: pokemon.sprites.other.dream_world.front_default,
+    image: pokemon.sprites.other.dream_world.front_default || pokemon.sprites.front_shiny,
     price: wight
   }
 
@@ -28,12 +28,16 @@ export function PokemonList({ onOpenModal, pokemon }) {
       <h1>{compra.name}</h1>
       <h3>{wight}</h3>
       <div>
-        <Link to="" onClick={onOpenModal}>
-          <MdOutlineInfo />
-        </Link>
-        <Link to="/Cart" onClick={sendPokemon}>
-          <MdAddShoppingCart />
-        </Link>
+        <Button >
+          <Link to="" onClick={() => onOpenModal(pokemon.name)}>
+            <MdOutlineInfo className="text"/>
+          </Link>
+        </Button>
+        <Button>
+          <Link to="/Cart" onClick={sendPokemon}>
+            <MdAddShoppingCart className="text"/>
+          </Link>
+        </Button>
       </div>
     </Card>
   );

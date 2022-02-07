@@ -21,50 +21,40 @@ export const Card = styled.li`
   }
 
   img {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     margin-bottom: 1rem;
   }
 
   div {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+`;
+
+export const Button = styled.a`
+  cursor: pointer;
+  width: auto;
+  padding: 0 1.5rem;
+  height: 2.5rem;
+  background: #f2db1d;
+  color: #000;
+  border-radius: 0.5rem;
+  border: 2px solid #3761a8;
+  font-size: 1rem;
+  margin-top: 2rem;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    filter: brightness(0.7);
   }
 
-  a{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    width: auto;
-    padding: 0 1.5rem;
-    height: 2.5rem;
-    background: #f2db1d;
-    color: #000;
-    border-radius: 0.5rem;
-    border: 0;
-    font-size: 1rem;
-    margin-top: 1.5rem;
-    font-weight: 700;
-    position: relative;
-    margin-left: 1rem;
-    margin-right: 1rem;
-
-    &::after,
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      top: 0;
-      left: 0;
-      right: 0;
-      transition: transform 0.3s ease-in-out;
-      border-radius: 0.5rem;
-      border: 2px solid #3761a8;
-      transform: scale(0);
-    }
-
-    &:hover::before,
-    &:hover::after {
-      transform: scale(1);
-    }
-    }
+  .text {
+    font-size: 1.3rem;
+  }
 `;
