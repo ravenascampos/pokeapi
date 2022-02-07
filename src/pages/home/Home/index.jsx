@@ -4,6 +4,7 @@ import { DivLoading, Container } from "./styles";
 import { PokePagination } from "../components/PokePagination";
 import { DetailsModal } from "../components/DetailsModal";
 import { PokemonList } from "../components/PokemonList";
+import Navbar from "../../../components/Navbar/index";
 import pokebola_loading from "../../../assets/images/pokebola-loading.gif";
 
 export function Home() {
@@ -79,6 +80,7 @@ export function Home() {
         </DivLoading>
       ) : (
         <>
+          <Navbar />
           <PokePagination PrevPagination={prev} NextPagination={next} />
           <Container>
             {pokemonList.map((pokemon_unique, id) => {
