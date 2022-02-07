@@ -1,12 +1,13 @@
 import React from "react";
 import * as S from './StyleButton'
+import { Link } from "react-router-dom";
 
 export function ButtonModal(){
     return(
         <>
-            <div>
-                <S.VoltarHome>Voltar para home</S.VoltarHome>
-            </div>
+            <S.contBtnModal>
+                <Link to="/">Voltar para home</Link>
+            </S.contBtnModal>
         </>
     );
 }

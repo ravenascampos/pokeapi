@@ -29,40 +29,42 @@ export const Card = styled.li`
   div {
     display: flex;
   }
-`;
 
-export const Button = styled.button`
-  cursor: pointer;
-  width: auto;
-  padding: 0 1.5rem;
-  height: 2.5rem;
-  background: #f2db1d;
-  color: #000;
-  border-radius: 0.5rem;
-  border: 0;
-  font-size: 1rem;
-  margin-top: 1.5rem;
-  font-weight: 700;
-  position: relative;
-  margin-left: 1rem;
-  margin-right: 1rem;
-
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: transform 0.3s ease-in-out;
+  a{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: auto;
+    padding: 0 1.5rem;
+    height: 2.5rem;
+    background: #f2db1d;
+    color: #000;
     border-radius: 0.5rem;
-    border: 2px solid #3761a8;
-    transform: scale(0);
-  }
+    border: 0;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    margin-left: 1rem;
+    margin-right: 1rem;
 
-  &:hover::before,
-  &:hover::after {
-    transform: scale(1);
-  }
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      transition: transform 0.3s ease-in-out;
+      border-radius: 0.5rem;
+      border: 2px solid #3761a8;
+      transform: scale(0);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      transform: scale(1);
+    }
+    }
 `;

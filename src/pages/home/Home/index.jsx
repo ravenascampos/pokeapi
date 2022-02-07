@@ -66,7 +66,7 @@ export function Home() {
     const { height } = response;
     const { weight } = response;
     const { types } = response;
-    const imageUrl = response.sprites.front_default;
+    const imageUrl = response.sprites.other.dream_world.front_default;
 
     const newPokemonDetails = {
       name: pokemon,

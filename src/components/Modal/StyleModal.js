@@ -5,11 +5,13 @@ export const OpenModal = Styled.button`
     height: 5vh;
     border: none;
     border-radius: 5px;
-    background-color: rgb(88, 88, 88);
+    background-color: #f2db1d;
     font-size: 1rem;
-    color: #fff;
+    color: black;
     cursor: pointer;
-    box-shadow: 3px 3px 3px rgb(27, 27, 27);
+    box-shadow: 3px 3px 3px rgb(95, 95, 95);
+    font-size: 1rem;
+    font-weight: 700;
 `
 
 export const CloseModal = Styled.span`

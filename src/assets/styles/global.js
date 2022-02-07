@@ -15,6 +15,8 @@ body {
     min-height: 100vh;
     background-size: 300% 300%;
     animation: colors 10s ease infinite;
+    ::-webkit-scrollbar {
+    display: none;
 }
 
 @keyframes colors {

@@ -7,12 +7,32 @@ export const Section = Styled.section`
     justify-content: center;
     flex-direction: column;
     width: 55vw;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
     height: 60vh;
-    padding: 0 35px 20px 35px;
+    padding: 35px 35px 20px 35px;
     background-color: #fff;
     border-radius: 15px;
-
+    ::-webkit-scrollbar {
+    display: none;
+    box-shadow: 3px 3px 3px red;
+}
     
+`
+
+export const pokemon = Styled.img`
+    width: 110px;
+    height: auto;
+`
+
+export const contPokemon = Styled.div`
+    width: 15vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
 `
     
 export const Container = Styled.div`
@@ -21,12 +41,14 @@ export const Container = Styled.div`
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(218, 216, 216);
+    overflow: hidden;
 `
 
 export const Table = Styled.table`
     width: 55vw;
     height: 60vh;
+    margin-top: 10px;
+
 `
 
 export const TituloProduto = Styled.td`
@@ -83,5 +105,8 @@ export const Contador = Styled.div`
     height: 3.5vh;
     text-align: center;
 `
-
+export const Linha = Styled.tr`
+    overflow-y: scroll;
+    max-height: 300px;
+`
     

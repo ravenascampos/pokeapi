@@ -15,6 +15,8 @@ export const Nav = styled.nav`
 
   /* Third Nav */
   /* justify-content: flex-start; */
+
+  
 `;
 
 export const NavImg = styled.img`
