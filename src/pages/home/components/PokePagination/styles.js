@@ -20,7 +20,7 @@ export const Pagination = styled.div`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   cursor: pointer;
   width: auto;
   padding: 0 1.5rem;
@@ -28,28 +28,19 @@ export const Button = styled.button`
   background: #f2db1d;
   color: #000;
   border-radius: 0.5rem;
-  border: 0;
+  border: 2px solid #3761a8;
   font-size: 1rem;
   margin-top: 1.5rem;
   font-weight: 700;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: transform 0.3s ease-in-out;
-    border-radius: 0.5rem;
-    border: 2px solid #3761a8;
-    transform: scale(0);
+  &:hover {
+    filter: brightness(0.7);
   }
-
-  &:hover::before,
-  &:hover::after {
-    transform: scale(1);
+  .text {
+    font-size: 1.3rem;
   }
 `;

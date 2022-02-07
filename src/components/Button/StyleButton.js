@@ -7,42 +7,47 @@ export const ContainerBtn = Styled.div`
     width: 49vw;
     height: 10vh;
 
-    a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 12vw;
-        height: 5vh;
-        margin-left: 30px;
-        border-radius: 5px;
-        background-color: #f2db1d;
-        font-size: 1rem;
-        cursor: pointer;
-        box-shadow: 3px 3px 3px rgb(95, 95, 95);
-        color: black;
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: 700;
+  a{
+  cursor: pointer;
+  width: auto;
+  padding: 0 1.5rem;
+  height: 2.5rem;
+  background: #f2db1d;
+  color: #000;
+  border-radius: 0.5rem;
+  border: 2px solid #3761a8;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  transition: filter 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+text-decoration: none;
+  &:hover {
+    filter: brightness(0.7);
+  }
     }
-`
+`;
 
-export const contBtnModal = Styled.div`
-    
-    
-    a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 10vw;
-        height: 5vh;
-        border-radius: 5px;
-        background-color: #f2db1d;
-        font-size: 1rem;
-        cursor: pointer;
-        box-shadow: 3px 3px 3px rgb(95, 95, 95);
-        color: black;
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: 700;
-    }
-`
+export const contBtnModal = Styled.a`
+     cursor: pointer;
+  width: auto;
+  padding: 0 1.5rem;
+  height: 2.5rem;
+  background: #f2db1d;
+  color: #000;
+  border-radius: 0.5rem;
+  border: 2px solid #3761a8;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  transition: filter 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    filter: brightness(0.7);
+  }
+`;
