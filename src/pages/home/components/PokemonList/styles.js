@@ -35,6 +35,7 @@ export const Card = styled.li`
 
 export const Button = styled.a`
   cursor: pointer;
+  text-decoration: none;
   width: auto;
   padding: 0 1.5rem;
   height: 2.5rem;
@@ -56,5 +57,7 @@ export const Button = styled.a`
 
   .text {
     font-size: 1.3rem;
+    text-decoration: none;
+    color: #000;
   }
 `;

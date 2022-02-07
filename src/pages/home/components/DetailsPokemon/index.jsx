@@ -1,20 +1,33 @@
 import { Button, Card } from "./styles";
 import { formatPrice } from "../../../../utils/formatPrice";
 import { CgPokemon } from "react-icons/cg";
+import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+import { getPokemon } from "../../../../Redux/Slice/CarrinhoSlice/carrinhoSlice";
 
 export function DetailsPokemon({ pokemon }) {
+  const value = formatPrice(pokemon.weight * 10);
+
+  const compra = {
+    name: pokemon.name,
+    image:
+      pokemon.sprites.other.dream_world.front_default ||
+      pokemon.sprites.front_shiny,
+    price: value,
+  };
+
+  const dispatch = useDispatch();
+
+  function sendPokemon() {
+    dispatch(getPokemon(compra));
+  }
+
   return (
     <Card>
-      <h1>{pokemon.name}</h1>
+      <h1>{compra.name}</h1>
       <div className="content">
         <div className="img-type">
-          <img
-            src={
-              pokemon.sprites.other.dream_world.front_default ||
-              pokemon.sprites.front_shiny
-            }
-            alt={pokemon.name}
-          />
+          <img src={compra.image} alt={compra.name} />
           <div>
             {pokemon.types.map((types) => (
               <p>{types.type.name}</p>
@@ -57,12 +70,13 @@ export function DetailsPokemon({ pokemon }) {
         </table>
       </div>
 
-      <h3>{formatPrice(pokemon.weight * 0.9)}</h3>
-
-      <Button>
-        <CgPokemon className="text" />
-        Capturar Pokemon
-      </Button>
+      <h3>{value}</h3>
+      <Link to="/cart" onClick={sendPokemon}>
+        <Button>
+          <CgPokemon className="text" />
+          Capturar Pokemon
+        </Button>
+      </Link>
     </Card>
   );
 }

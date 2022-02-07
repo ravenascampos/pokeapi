@@ -1,46 +1,50 @@
-import React, { useState } from 'react';
-import LoginForm from './comp/Loginform';
-import * as S from "./comp/login.style"
+import React, { useState } from "react";
+import LoginForm from "./comp/Loginform";
+import * as S from "./comp/login.style";
+import { Home } from "../home/Home";
 
 function Log() {
   const adminUser = {
     email: "ash@gmail.com",
-    password: "admin123"
-  }
+    password: "admin123",
+  };
 
-  const [user, setUser] = useState({name: "", email: ""});
+  const [user, setUser] = useState({ name: "", email: "" });
   const [error, setError] = useState("");
 
-  const Login = details => {
+  const Login = (details) => {
     console.log(details);
 
-    if (details.email == adminUser.email && details.password == adminUser.password) {
+    if (
+      details.email === adminUser.email &&
+      details.password === adminUser.password
+    ) {
       console.log("Logged in");
       setUser({
-        name: details.name, 
-        email: details.email
+        name: details.name,
+        email: details.email,
       });
     } else {
       console.log("Informações faltantes");
       setError("Informações faltantes");
     }
-  }
-
+  };
+  /*
   const Logout = () => {
-    setUser({name: "", email: ""});
-  }  
-
+    setUser({ name: "", email: "" });
+  };
+*/
   return (
-    <S.Back>
-      {(user.email !="") ? (
-        <div className='welcome'>
-          <h2>Bem vindo(a), <span>{user.name}</span></h2>
-          <button onClick={Logout}>Logout</button>
-        </div>
+    <>
+      {user.email !== "" ? (
+        <Home />
       ) : (
-        <LoginForm Login={Login} error={error} />
+        <S.Back>
+          {" "}
+          <LoginForm Login={Login} error={error} />
+        </S.Back>
       )}
-    </S.Back>
+    </>
   );
 }
 export default Log;

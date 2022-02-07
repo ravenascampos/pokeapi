@@ -1,19 +1,19 @@
 import styled from "styled-components";
 
-export const Im = styled.img `
-  height: 9vh
-`
+export const Im = styled.img`
+  height: 9vh;
+`;
 
-export const Back = styled.div `  
+export const Back = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("https://sm.ign.com/ign_br/news/p/pokemon-un/pokemon-unite-gets-a-release-date-on-mobile-devices_4kdt.png"); 
+  background-image: url("https://sm.ign.com/ign_br/news/p/pokemon-un/pokemon-unite-gets-a-release-date-on-mobile-devices_4kdt.png");
   background-size: cover;
 `;
 
-export const Form = styled.form `
+export const Form = styled.form`
   height: 100vh;
   display: flex;
   align-items: center;
@@ -21,7 +21,7 @@ export const Form = styled.form `
   background-size: cover;
 `;
 
-export const DivContainer = styled.div `
+export const DivContainer = styled.div`
   position: relative;
   display: block;
   background: rgba(255, 255, 255, 0.15);
@@ -37,14 +37,14 @@ export const DivContainer = styled.div `
   }
 `;
 
-export const Title = styled.h2 `
+export const Title = styled.h2`
   color: rgb(94, 89, 89);
   font-size: 28px;
   font-weight: 500;
   margin-bottom: 30px;
 `;
 
-export const FormGroup = styled.div`  
+export const FormGroup = styled.div`
   display: block;
   width: 300px;
   margin-bottom: 15px;
@@ -52,13 +52,13 @@ export const FormGroup = styled.div`
 
 export const Label = styled.label`
   display: block;
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-size: 17px;
   margin-bottom: 10px;
   transition: 0.4s;
 `;
 
-export const Input = styled.input `
+export const Input = styled.input`
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border-radius: 2rem;
@@ -83,7 +83,7 @@ export const Input = styled.input `
   }
 `;
 
-export const Button = styled.input ` 
+export const Button = styled.input` 
   display: inline-block;
   padding: 10px 15px;
   border-radius: 8px;
@@ -104,5 +104,4 @@ export const Button = styled.input `
   width: 100%;
   margin: 1.8rem 0 0rem 0;
   }
-`; 
-
+`;

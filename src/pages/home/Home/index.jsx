@@ -64,8 +64,6 @@ export function Home() {
     let pokemonSelect = pokemon.filter(
       (pokemon_unique) => pokemon_unique.name === name
     );
-    console.log("teste");
-    console.log(pokemonSelect);
     setPokemon(pokemonSelect);
     setOpenModal(true);
   }
