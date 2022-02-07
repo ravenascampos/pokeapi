@@ -6,7 +6,7 @@ import { getPokemon } from "../../../../Redux/Slice/CarrinhoSlice/carrinhoSlice"
 import { Link } from "react-router-dom";
 
 export function PokemonList({ onOpenModal, pokemon }) {
-  const value = formatPrice(pokemon.weight * 10);
+  const value = pokemon.weight * 10;
 
   const compra = {
     name: pokemon.name,
@@ -14,6 +14,7 @@ export function PokemonList({ onOpenModal, pokemon }) {
       pokemon.sprites.other.dream_world.front_default ||
       pokemon.sprites.front_shiny,
     price: value,
+    quantity: 1,
   };
 
   const dispatch = useDispatch();
@@ -27,7 +28,7 @@ export function PokemonList({ onOpenModal, pokemon }) {
     <Card>
       <img src={compra.image} alt={compra.name} />
       <h1>{compra.name}</h1>
-      <h3>{value}</h3>
+      <h3>{formatPrice(value)}</h3>
       <div>
         <Button onClick={() => onOpenModal(pokemon.name)}>
           <MdOutlineInfo className="text" />

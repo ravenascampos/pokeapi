@@ -25,7 +25,7 @@ export const Section = styled.div`
   border-radius: 15px;
   ::-webkit-scrollbar {
     display: none;
-    box-shadow: 3px 3px 3px red;
+    box-shadow: 3px 3px 3px 3px red;
   }
 `;
 
@@ -83,13 +83,16 @@ export const Celula = styled.td`
 export const ContainerContador = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 5vw;
+  width: 10vw;
 `;
 
 export const BtnContador = styled.button`
   background-color: #fff;
   border: none;
   font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin-right: 1rem;
 `;
 
 export const Contador = styled.div`
