@@ -4,7 +4,7 @@ import { styled } from '@mui/system';
 import ModalUnstyled from '@mui/base/ModalUnstyled';
 import LocalGroceryStoreOutlinedIcon from '@mui/icons-material/LocalGroceryStoreOutlined';
 import CloseIcon from '@mui/icons-material/Close';
-import * as S from './StyleModal'
+import * as S from './StyleModal';
 
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;

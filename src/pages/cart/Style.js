@@ -23,9 +23,10 @@ export const Section = styled.div`
   padding: 35px 35px 20px 35px;
   background-color: #fff;
   border-radius: 15px;
+  -webkit-box-shadow: 3px -7px 18px 2px rgba(0,0,0,0.47); 
+  box-shadow: 3px -7px 18px 2px rgba(0,0,0,0.47);
   ::-webkit-scrollbar {
     display: none;
-    box-shadow: 3px 3px 3px 3px red;
   }
 `;
 
@@ -84,6 +85,7 @@ export const ContainerContador = styled.div`
   display: flex;
   justify-content: space-between;
   width: 10vw;
+  margin-right: 50px;
 `;
 
 export const BtnContador = styled.button`
@@ -91,8 +93,8 @@ export const BtnContador = styled.button`
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 `;
 
 export const Contador = styled.div`

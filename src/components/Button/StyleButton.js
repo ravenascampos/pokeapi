@@ -6,6 +6,7 @@ export const ContainerBtn = Styled.div`
     align-items: center;
     width: 49vw;
     height: 10vh;
+    margin-left: 50px;
 
   a{
   cursor: pointer;
