@@ -11,10 +11,10 @@ export function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Log />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="login" element={<Log />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
       <GlobalStyle />
     </>

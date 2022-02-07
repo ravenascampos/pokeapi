@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavLink to="/">
+        <NavLink to="/home">
           <NavImg src={logo} alt="logo" />
         </NavLink>
 
@@ -41,7 +41,7 @@ const Navbar = () => {
           <NavLink to="/profile" activeStyle>
             <IoPersonOutline />
           </NavLink>
-          <NavLink to="/login" activeStyle>
+          <NavLink to="/" activeStyle>
             <FiLogIn />
           </NavLink>
         </Menu>
