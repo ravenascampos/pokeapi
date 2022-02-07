@@ -39,9 +39,12 @@ export const carrinhoSlice = createSlice({
         state.pokemon = newList;
       }
     },
+    clearPokemon: state => {
+      state.pokemon = []
+    }
   },
 });
 
-export const { getPokemon } = carrinhoSlice.actions;
+export const { getPokemon, clearPokemon } = carrinhoSlice.actions;
 
 export default carrinhoSlice.reducer;
