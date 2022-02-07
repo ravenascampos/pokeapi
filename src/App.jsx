@@ -3,6 +3,7 @@ import { GlobalStyle } from "./assets/styles/global";
 import { Home } from "./pages/home/Home/index";
 import Profile from "./pages/profile/Profile"
 import NavBar from "./components/Navbar"
+import Cart from "./pages/cart/Cart"
 import Modal from "react-modal";
 
 Modal.setAppElement("#root");
@@ -14,6 +15,7 @@ export function App() {
         
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/cart" element={<Cart />} />
         
         
       </Routes>

@@ -13,6 +13,12 @@ export const Nav = styled.nav`
   position: static;
   width: 100%;
 
+
+  /* Third Nav */
+  /* justify-content: flex-start; */
+
+  
+
 `;
 
 export const NavImg = styled.img`
