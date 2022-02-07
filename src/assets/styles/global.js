@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    text-decoration: none
 }
 
 body {
@@ -17,7 +18,7 @@ body {
     animation: colors 10s ease infinite;
     ::-webkit-scrollbar {
     display: none;
-}
+} 
 
 @keyframes colors {
     0% {
@@ -46,7 +47,7 @@ justify-content: center;
 .react-modal-content {
 width: 100%;
 max-width: 36rem;
-height: 90%;
+height: auto;
 background: #ffffff;
 padding: 3rem;
 position: relative;
@@ -58,6 +59,6 @@ border: 2px solid #f2bd1d;
 .icon {
     font-size: 1.5rem;
 }
-
+}
 
 `;
