@@ -33,19 +33,6 @@ Todos os dados sobre os pokémon como nome, número, tipo, imagem e entre outras
 - [x] **Header**: Navegação com icones de perfil, carrinho de compras e logout, além da Logo da aplicação.
 
 
-
-### Funcionalidades Extras
-
-Além das funcionalidades principais foram adicionadas outras ao projeto:
-
-- [x] **Salvar Dados de compra localmente**: Os dados do carrinho de compras são salvos no localStorage. Cada loja armazena seus dados individualmente. Assim, mesmo atualizando a página ou navengando entre as lojas, os dados não se perdem até finalizar a compra.
-
-- [x] **Seção detalhes**: Foi adotado o uso de um modal para apresentar os dados de informações sobre o produto, como tipos, habilidades, altura e peso. Basta clicar no ícone de info, presente em cada card de pokémon.
-
-- [x] **Notificação por toast**: Para interagir e guiar o usuário, foram utilizados Toasts de notificação para apresentar algum aviso( por exemplo, quando tentar finalizar a compra com o carrinho vazio) ou de erro.
-
-- [x] **Gerenciamento de estoque**: Como a API não disponibiliza "estoque de pokémon", foi definido um padrão de no máximo 3 itens de cada no carrinho. A aplicação consegue incrementar e decrementar itens, e retorna um aviso caso a quantidade selecionada seja maior que o estoque definido.
-
 ### Conceitos abordados
 
 - Uso de css-in-js e criação de Tema global com o `ThemeProvider` do [styled-components](https://www.styled-components.com/)
