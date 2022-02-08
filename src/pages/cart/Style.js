@@ -23,8 +23,8 @@ export const Section = styled.div`
   padding: 35px 35px 20px 35px;
   background-color: #fff;
   border-radius: 15px;
-  -webkit-box-shadow: 3px -7px 18px 2px rgba(0,0,0,0.47); 
-  box-shadow: 3px -7px 18px 2px rgba(0,0,0,0.47);
+  -webkit-box-shadow: 3px -7px 18px 2px rgba(0, 0, 0, 0.47);
+  box-shadow: 3px -7px 18px 2px rgba(0, 0, 0, 0.47);
   ::-webkit-scrollbar {
     display: none;
   }
@@ -84,7 +84,7 @@ export const Celula = styled.td`
 export const ContainerContador = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 10vw;
+  width: 20vw;
   margin-right: 50px;
 `;
 
