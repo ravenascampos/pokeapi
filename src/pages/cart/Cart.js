@@ -10,13 +10,15 @@ import { formatPrice } from "../../utils/formatPrice";
 
 export function Cart() {
   const pokemon = useSelector((state) => state.carrinho.pokemon);
+
+  //valor total
   var total = 0;
   pokemon.forEach((poke) => {
     total += poke.quantity * poke.price;
   });
 
   const dispatch = useDispatch();
-
+  //incrementar
   function addPokemon(poke) {
     let newPoke = {
       name: poke.name,
@@ -26,7 +28,7 @@ export function Cart() {
     };
     dispatch(getPokemon(newPoke));
   }
-
+  //decrementar
   function removePokemon(poke) {
     let newPoke = {
       name: poke.name,

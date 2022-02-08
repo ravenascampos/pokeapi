@@ -67,7 +67,7 @@ export const Box = Styled.div`
     justify-content: center;
     flex-direction: column;
     width: 350;
-    height: 30vh;
+    height: 50vh;
     border-radius: 10px;
     background-color: #fff;
     border: 2px solid none;

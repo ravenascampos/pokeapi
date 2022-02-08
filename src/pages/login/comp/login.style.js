@@ -75,11 +75,13 @@ export const Input = styled.input`
     box-shadow: 0 0 0 0.2rem #b9abe0;
     backdrop-filter: blur(12rem);
     border-radius: 2rem;
+    background: transparent;
   }
   &::placeholder {
     color: #5f4d9199;
     font-weight: 100;
     font-size: 1rem;
+    background: transparent;
   }
 `;
 
