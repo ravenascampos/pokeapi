@@ -1,7 +1,6 @@
 import { useFormik } from "formik";
 import * as yup from "yup";
 import * as S from "./Container.styles";
-import { Persist } from "formik-persist";
 import Navbar from "../../components/Navbar";
 
 function Profile() {
@@ -273,7 +272,9 @@ function Profile() {
               </S.LabelContainer>
 
               <S.DivButton>
-                <S.ButtonSave type="submit">Salvar</S.ButtonSave>
+                <S.ButtonSave type="submit" onSubmit={armazenar}>
+                  Salvar
+                </S.ButtonSave>
                 <S.ButtonClear type="reset">Limpar</S.ButtonClear>
               </S.DivButton>
 
