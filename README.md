@@ -57,7 +57,7 @@ Todos os dados sobre os pokémon como nome, número, tipo, imagem e entre outras
 Faça um clone desse repositório e acesse o diretório.
 
 ```bash
-$ git clone https://github.com/lucascmreis/pokeplace.git && cd pokeplace
+$ git clone https://github.com/ravenascampos/pokeapi.git && cd pokeapi
 ```
 
 ```bash
