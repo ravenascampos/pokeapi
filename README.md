@@ -13,7 +13,7 @@
 
 ## 💻 Projeto
 
-Projeto desenvolvido como conclusão de curso da Accenture Academy Front-end. 
+Projeto desenvolvido em equipe como conclusão de curso da Accenture Academy Front-end. 
 Todos os dados sobre os pokémon como nome, número, tipo, imagem e entre outras coisas, foram disponilizadas com o uso da API REST [PokéApi](https://pokeapi.co/).
 
 ### Funcionalidades
@@ -50,6 +50,14 @@ Todos os dados sobre os pokémon como nome, número, tipo, imagem e entre outras
 - [React-MUI](https://mui.com/)
 - [Redux](https://react-redux.js.org/)
 - [Create React App](https://github.com/facebook/create-react-app).
+
+## 👩‍🚀 Conheça nossa equipe
+
+- [Gabrielle Almeida](https://www.linkedin.com/in/gabrielle-almeida-de-oliveira-949878202/)
+- [Inara Oliveira](https://www.linkedin.com/in/inara-oliveira/)
+- [Ravena Campos](https://www.linkedin.com/in/ravenascampos/)
+- [Sarah Martins](https://www.linkedin.com/in/sarah-martins-988a0218a/)
+
 
 
 ## 📥 Instalação e execução
